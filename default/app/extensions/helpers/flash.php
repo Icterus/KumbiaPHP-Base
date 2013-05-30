@@ -23,13 +23,13 @@
  */
 class Flash {
 
-		/**
+	/**
 	 * Visualiza un mensaje flash
 	 *
 	 * @param string $name	Para tipo de mensaje y para CSS class='alert-$name'.
 	 * @param string $msg 	Mensaje a mostrar
 	 */
-	public static function show($name,$msg,$autoclose=False)
+	public static function show($name,$msg)
 	{
 		if(isset($_SERVER['SERVER_SOFTWARE'])){
 				if ( View::get('response') == 'json') {
@@ -47,9 +47,9 @@ class Flash {
 	 *
 	 * @param string $err
 	 */
-	public static function error($msg,$autoclose=False)
+	public static function error($msg)
 	{
-		return self::show('error',$msg,$autoclose);
+		return self::show('error',$msg);
 	}
 
 	/**
@@ -57,9 +57,9 @@ class Flash {
 	 *
 	 * @param string $msg
 	 */
-	public static function warning($msg,$autoclose=False)
+	public static function warning($msg)
 	{
-		return self::show('warning',$msg,$autoclose);
+		return self::show('warning',$msg);
 	}
 
 	/**
@@ -67,18 +67,18 @@ class Flash {
 	 *
 	 * @param string $msg
 	 */
-	public static function info($msg,$autoclose=False)
+	public static function info($msg)
 	{
-		return self::show('info',$msg,$autoclose);
+		return self::show('info',$msg);
 	}
 	/**
 	 * Visualiza informacion de suceso correcto en pantalla
 	 *
 	 * @param string $msg
 	 */
-	public static function valid($msg,$autoclose=False)
+	public static function valid($msg)
 	{
-		return self::show('valid',$msg,$autoclose);
+		return self::show('valid',$msg);
 	}
 
 	/**
@@ -88,9 +88,9 @@ class Flash {
 	 *
 	 * @deprecated  ahora Flah::info()
 	 */
-	public static function notice($msg,$autoclose=False)
+	public static function notice($msg)
 	{
-		return self::show('info',$msg,$autoclose);
+		return self::show('info',$msg);
 	}
 
 	/**
@@ -100,8 +100,8 @@ class Flash {
 	 *
 	 * @deprecated  ahora Flash::valid()
 	 */
-	public static function success($msg,$autoclose=False)
+	public static function success($msg)
 	{
-		return self::show('valid',$msg,$autoclose);
+		return self::show('valid',$msg);
 	}
 }
