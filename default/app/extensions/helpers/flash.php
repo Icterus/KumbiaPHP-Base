@@ -23,7 +23,7 @@
  */
 class Flash {
 
-	/**
+		/**
 	 * Visualiza un mensaje flash
 	 *
 	 * @param string $name	Para tipo de mensaje y para CSS class='alert-$name'.
@@ -32,8 +32,8 @@ class Flash {
 	public static function show($name,$msg,$autoclose=False)
 	{
 		if(isset($_SERVER['SERVER_SOFTWARE'])){
-				if($autoclose){
-					echo '<div class="alert alert-' , $name , ' fade in" data-dismiss="alert">' , $msg , '</div><script type="text/javascript">setTimeout(function(){ $(".alert").alert(\'close\'); }, 6000);</script>', PHP_EOL;
+				if ( View::get('response') == 'json') {
+					echo json_encode( array('status' => $name, 'message' => $msg) );
 				} else {
 					echo '<div class="alert alert-' , $name , ' fade in" data-dismiss="alert"><a class="close" href="#" >×</a>' , $msg , '</div>', PHP_EOL;
 				}
