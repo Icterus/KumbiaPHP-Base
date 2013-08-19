@@ -1,25 +1,17 @@
-Concursos
+KumbiaPHP para Icterus
 ===
 
-Sistema para reporte en línea de los Concursos Nacionales de Vida al Aire Libre y Acción Comunitaria, Desarrollado para la Asociación Scouts de Venezuela por el equipo de Icter.us con [KumbiaPHP 1.0Beta2](http://www.kumbiaphp.com/), [Bootstrap Twitter](http://twitter.github.io/bootstrap/) y [Font-Awesome](http://fortawesome.github.io/Font-Awesome/)
+Esto es un simple adaptación del proyecto de [KumbiaPHP](http://www.kumbiaphp.com/) para agregarle algunas
+características adicionales, para nosotros necesarias para comenzar de lleno a desarrollar un proyecto con
+todo el paquetes de herramientas completas.
+
+Herramientas como el [Bootstrap de Twitter](http://getbootstrap.com/), el [Font Awesome](http://fortawesome.github.io/Font-Awesome/) y [Google Charts](https://google-developers.appspot.com/chart/) en reemplazo de [Flot](http://www.flotcharts.org/) y claro apoyado en CDNs para optimizar la velocidades de carga, etc.
 
 ## Desarrollado por el Equipo de Icterus
-* [Jaro Marval](jampgold@gmail.com) (Jefe del Proyecto, Desarrollador, Seudo-Diseñador)
+* [Jaro Marval](jampgold@gmail.com) (Jefe del Proyecto, Desarrollador, Backend Developer con delirios de Frontend)
 
-## Caracteristicas
-* Importación desde un archivo de Registro GPO
-* Historicos de Actividades
-
-
-## Cosas listas
-* Logeo
-* Cambio de Clave
-
-## Cosas por hacer
-* Registrar chamos
-* Importar GPO
-* Crear Unidades
-* Reportar Acitvidades
-* Actividades
-* Dashboard (Gráficas e Información)
-* Integrar con Adaba
+## Características
+* El poder de KumbiaPHP para apoyar en el Backend
+* La belleza de Bootstrap de Twitter para en el Frontend
+* La versatilidad de Font Awesome para los Iconos y Ayudas Visuales
+* El poder y compatibilidad de Google Charts para los gráficos estadísticos
