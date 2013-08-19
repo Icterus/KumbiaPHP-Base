@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+  <meta http-equiv='Content-type' content='text/html; charset=<?php echo APP_CHARSET ?>' />
+  <title>KumbiaPHP web &amp; App Framework</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <!-- CDN de Bootstrap y Font-awesome -->
+  <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.min.css" rel="stylesheet">
+  <?php Tag::css('bienvenida'); ?>
+  <?php echo Html::includeCss() ?>
+</head>
+<body>
+    <div class='container'>
+        <div class='navbar'>
+          <div class="navbar-inner">
+            <?php echo Html::link('', 'KumbiaPHP', 'class="brand"'); ?><small>web &amp; app Framework versión <?php echo kumbia_version() ?></small>
+            <div class='pull-right'>
+                <p id='nav'>
+                    <span class='app'><?php echo basename(dirname(APP_PATH)) ?></span>
+                    <?php echo Html::link('pages/show/kumbia/status/', 'Config', 'title="Ver configuración de la aplicación"') ?>
+                </p>
+             </div>
+          </div>
+        </div>
+
+        <?php View::content(); ?>
+
+        <?php View::partial('kumbia/footer') ?>
+    </div>
+</body>
+</html>
